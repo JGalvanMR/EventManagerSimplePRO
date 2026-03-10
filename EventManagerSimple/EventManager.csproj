@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net9.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<UseWindowsForms>true</UseWindowsForms>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<PackageIcon>appicon2.png</PackageIcon>
+		<ApplicationIcon>LOGO.ico</ApplicationIcon>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Remove="BitmapLuminanceSource.cs" />
+	  <Compile Remove="GeneradorEmailOG.cs" />
+	  <Compile Remove="GeneradorEmailOG2.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Content Include="LOGO.ico" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Include="..\..\..\Users\jesus.DESKTOP-RGDD49H\Downloads\appicon2.png">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="ClosedXML" Version="0.102.1" />
+		<PackageReference Include="QRCoder" Version="1.4.3" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+		<PackageReference Include="System.Drawing.Common" Version="7.0.0" />
+		<PackageReference Include="System.Text.Encoding.CodePages" Version="10.0.0" />
+		<PackageReference Include="ZXing.Net" Version="0.16.11" />
+		<PackageReference Include="ZXing.Net.Bindings.Windows.Compatibility" Version="0.16.10" />
+	</ItemGroup>
+
+</Project>
